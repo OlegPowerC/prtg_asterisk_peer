@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ValueLookup id="Asterisk" desiredValue="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PaeValueLookup.xsd">
+<ValueLookup id="AsteriskStation" desiredValue="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PaeValueLookup.xsd">
     <Lookups>
         <SingleInt state="Ok" value="1">Ok</SingleInt>
         <SingleInt state="Error" value="0">No data</SingleInt>
         <SingleInt state="Error" value="2">Unknown</SingleInt>
+        <SingleInt state="Error" value="3">Peer not found</SingleInt>
     </Lookups>
 </ValueLookup>
