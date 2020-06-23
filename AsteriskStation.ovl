@@ -5,5 +5,6 @@
         <SingleInt state="Error" value="0">No data</SingleInt>
         <SingleInt state="Error" value="2">Unknown</SingleInt>
         <SingleInt state="Error" value="3">Peer not found</SingleInt>
+        <SingleInt state="Error" value="4">Peer unreachable</SingleInt>
     </Lookups>
 </ValueLookup>

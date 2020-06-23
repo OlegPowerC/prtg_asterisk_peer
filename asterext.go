@@ -14,6 +14,7 @@ const PEER_ERROR_NOT_FOUND = 0
 const PEER_OK = 1
 const PEER_OTHER_ERROR = 2
 const PEER_ERROR_UNKNOWN = 3
+const PEER_ERROR_UNREACHABLE = 4
 
 type result struct {
 	Channel     string `xml:"channel"`
@@ -190,6 +191,9 @@ func main() {
 			} else {
 				if rres.StstionStatus == "UNKNOWN" {
 					StstionDataAll[StationIndex].StatioStatusInt = PEER_ERROR_UNKNOWN
+				}
+				if rres.StstionStatus == "UNREACHABLE" {
+					StstionDataAll[StationIndex].StatioStatusInt = PEER_ERROR_UNREACHABLE
 				}
 			}
 		}
